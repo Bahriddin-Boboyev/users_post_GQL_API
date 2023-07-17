@@ -1,0 +1,22 @@
+{
+  "type": "node",
+  "request": "launch",
+  "name": "Launch TS Program",
+  "program": "${workspaceFolder}/app.ts",
+  "env": {
+    "NODE_ENV": "standalone"
+  },
+  "preLaunchTask": "tsc: build - tsconfig.json",
+  "cwd": "${workspaceFolder}",
+  "outFiles": ["${workspaceFolder}/build/**/*.js"],
+  "sourceMaps": true,
+  "outputCapture": "std",
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://localhost:4000/gql\\",
+      "request": "launch",
+      "url": "http://localhost:4000/gql\\"
+    }
+  ]
+}
